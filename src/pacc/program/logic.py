@@ -23,11 +23,13 @@ def logic():
         selection = mainMenu()
         if selection == MAIN_MENU[0]:
             a, b, c, d = transaction(selection)
-            add_transactions(a, b, c, d)
+            if c == "Income":
+                inc(a, b, c, d)
 
         elif selection == MAIN_MENU[1]:
             a, b, c, d = transaction(selection)
-            add_transactions(a, b, c, d)
+            if c == "Expense":
+                exp(a, b, c, d)
         
         elif selection == MAIN_MENU[2]:
             show_balance()

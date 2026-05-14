@@ -2,6 +2,8 @@
 
 This is a transaction recorder tool built with `pandas` to track Income, Expenses, Balance and Transaction History. and All transactions are stored in a CSV file for easy access and analysis.
 
+I made this project to learn and practice `pandas` but you can still use it for recording your transactions
+
 # Requirements
 
 Create a Venv:
