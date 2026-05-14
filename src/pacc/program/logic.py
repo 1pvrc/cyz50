@@ -21,14 +21,11 @@ def logic():
 
     while True:
         selection = mainMenu()
-
         if selection == MAIN_MENU[0]:
-            create()
             a, b, c, d = transaction(selection)
             add_transactions(a, b, c, d)
 
         elif selection == MAIN_MENU[1]:
-            create()
             a, b, c, d = transaction(selection)
             add_transactions(a, b, c, d)
         
