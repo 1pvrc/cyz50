@@ -14,6 +14,10 @@ and install the requirements:
 ```bash
 uv pip install -r requirements.txt
 ```
+or just:
+```bash
+uv pip install pandas questionary
+```
 
 # Usage
 Run the application using:
