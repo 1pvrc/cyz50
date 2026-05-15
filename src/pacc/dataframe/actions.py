@@ -25,7 +25,7 @@ def save_data(df):
 
 
 
-def transactions(a, b, c, d, Selection):
+def add_transactions(a, b, c, d, Selection):
     new_data = {
         "Date": a,
         "Note": b,

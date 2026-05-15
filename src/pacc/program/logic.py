@@ -24,12 +24,12 @@ def logic():
         if selection == MAIN_MENU[0]:
             a, b, c, d = transaction(selection)
             if c == "Income":
-                transactions(a, b, c, d, selection)
+                add_transactions(a, b, c, d, selection)
 
         elif selection == MAIN_MENU[1]:
             a, b, c, d = transaction(selection)
             if c == "Expense":
-                transactions(a, b, c, d, selection)
+                add_transactions(a, b, c, d, selection)
         
         elif selection == MAIN_MENU[2]:
             show_balance()
