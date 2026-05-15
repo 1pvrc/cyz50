@@ -22,6 +22,12 @@ uv pip install pandas questionary
 ```
 
 ## Usage
+
+make sure you have a `data` folder inside root, if you dont run:
+```bash
+mkdir data
+```
+
 Run the application using:
 ```bash
 py main.py
