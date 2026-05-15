@@ -12,7 +12,7 @@ def transaction(choice):
         t_type = "Expense"
     amount = int(input("Enter an amount: "))
     note = input("Enter a note: ")
-    date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    date = datetime.now().strftime("%d-%m-%Y %H:%M")
     return date, note, t_type, amount
 
 
@@ -24,12 +24,12 @@ def logic():
         if selection == MAIN_MENU[0]:
             a, b, c, d = transaction(selection)
             if c == "Income":
-                inc(a, b, c, d)
+                transactions(a, b, c, d, selection)
 
         elif selection == MAIN_MENU[1]:
             a, b, c, d = transaction(selection)
             if c == "Expense":
-                exp(a, b, c, d)
+                transactions(a, b, c, d, selection)
         
         elif selection == MAIN_MENU[2]:
             show_balance()
@@ -39,5 +39,3 @@ def logic():
 
         elif selection == MAIN_MENU[3]:
             break
-
-        

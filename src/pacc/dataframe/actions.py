@@ -1,8 +1,10 @@
 import pandas as pd
 import os
-from src.pacc.config import FILE_NAME
+from src.pacc.config import FILE_NAME, accounts
+from src.pacc.config import *
 
 def create():
+    
     if not os.path.exists(FILE_NAME):
         df = pd.DataFrame(columns=[
             "Date",
@@ -23,7 +25,7 @@ def save_data(df):
 
 
 
-def inc(a, b, c, d):
+def transactions(a, b, c, d, Selection):
     new_data = {
         "Date": a,
         "Note": b,
@@ -32,23 +34,8 @@ def inc(a, b, c, d):
         
     }
 
-    df = load_data()
-
-    df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
-
-    save_data(df)
-
-    print("\n Transaction added!\n ")
-
-
-def exp(a, b, c, d):
-    new_data = {
-        "Date": a,
-        "Note": b,
-        "Type": c,
-        "Credit": d
-        
-    }
+    if Selection == MAIN_MENU[0]:
+        new_data["Credit"] = new_data.pop("Debit")
 
     df = load_data()
 
@@ -69,8 +56,8 @@ def show_balance():
         print("Current Balance: 0")
         return
 
-    income = df["Debit"].sum()
-    expense = df["Credit"].sum()
+    income = df["Credit"].sum()
+    expense = df["Debit"].sum()
 
     balance = income - expense
 
