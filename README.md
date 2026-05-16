@@ -1,8 +1,9 @@
 # Transaction Recording CLI Tool
 
-This is a transaction recorder tool built with `pandas` to track Income, Expenses, Balance and Transaction History. and All transactions are stored in a CSV file for easy access and analysis.
+A lightweight, interactive command-line tool for tracking personal finances. Built with `pandas` to record income, expenses, and maintain a complete transaction history with real-time balance updates. All data persists locally in CSV format for easy analysis in Excel, Google Sheets, or any data analysis tool.
 
-I made this project to learn and practice `pandas` but you can still use it for recording your transactions
+
+> **Learning Note:** This project was created to practice `pandas` data manipulation, but it's fully functional for daily financial tracking!
 
 ## Requirements
 
