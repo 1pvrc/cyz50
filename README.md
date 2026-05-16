@@ -6,7 +6,7 @@ A lightweight, interactive command-line tool for tracking personal finances. Bui
 > **Learning Note:** This project was created to practice `pandas` data manipulation, but it's fully functional for daily financial tracking!
 
 Clone the repo using:
-```Bash
+```bash
 git clone https://github.com/1pvrc/transaction-recorder.git
 mkdir transaction-recorder
 ```
@@ -30,7 +30,7 @@ uv pip install pandas questionary
 
 ## Usage
 
-make sure you have a `data` folder inside root, if you dont run:
+make sure you have a `data` folder inside root. If you dont, run:
 ```bash
 mkdir data
 ```
