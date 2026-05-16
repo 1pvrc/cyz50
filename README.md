@@ -6,7 +6,7 @@ A lightweight, interactive command-line tool for tracking personal finances. Bui
 > **Learning Note:** This project was created to practice `pandas` data manipulation, but it's fully functional for daily financial tracking!
 
 Clone the repo using:
-```
+```Bash
 git clone https://github.com/1pvrc/transaction-recorder.git
 mkdir transaction-recorder
 ```
