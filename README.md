@@ -3,7 +3,7 @@
 A lightweight, interactive command-line tool for tracking personal finances. Built with `pandas` to record income, expenses, and maintain a complete transaction history with real-time balance updates. All data persists locally in CSV format for easy analysis in Excel, Google Sheets, or any data analysis tool.
 
 
-> **Learning Note:** This project was created to practice `pandas` data manipulation, but it's fully functional for daily financial tracking!
+> **Learning Note:** This project was created to practice `pandas` data manipulation, but it's fully functional for daily financial tracking.
 
 Clone the repo using:
 ```bash
